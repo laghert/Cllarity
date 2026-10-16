@@ -1,0 +1,20 @@
+buildscript {
+    ext {
+        kotlin_version = '2.4.21'
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:9.4.1'
+        // AGP 9 ma wbudowaną obsługę Kotlina; ta wersja KGP nadpisuje domyślną dołączoną przez AGP.
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        // Od Kotlina 2.0 kompilator Compose jest pluginem Kotlina (zamiast composeOptions).
+        classpath "org.jetbrains.kotlin:compose-compiler-gradle-plugin:$kotlin_version"
+    }
+}
+
+tasks.register('clean', Delete) {
+    delete rootProject.layout.buildDirectory
+}

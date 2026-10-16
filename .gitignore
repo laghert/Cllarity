@@ -1,0 +1,31 @@
+# --- Android / Gradle ---
+*.iml
+.gradle
+/local.properties
+local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+app/build/
+*.apk
+*.aab
+
+# --- Lokalna konfiguracja narzędzi ---
+.kiro/
+
+# --- Materiały marketingowe (duże pliki wideo i projekty montażowe – poza repo) ---
+*.mp4
+*.mov
+*.fcpx
+*.ecproj
+/commercial/
+/tiktok/
+/FilmCraft Previews/
+/screenshots/
+/guide_*.png
+/test_screen.png
+/llumie_showcase.html
+/PROMPT_*.md

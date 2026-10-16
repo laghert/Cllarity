@@ -1,0 +1,125 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 1. Ambient Glow z tyłu uszu i głowy -->
+    <path
+        android:fillColor="#33A78BFA"
+        android:pathData="M54,58m-34,0a34,34 0 1,0 68,0a34,34 0 1,0 -68,0" />
+
+    <!-- 2. Lewe ucho (Płomień Nadziei z gradientem cyan -> lila) -->
+    <path
+        android:pathData="M43,50 C41,36 34,22 37,16 C41,20 48,32 49,50 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="37"
+                android:startY="16"
+                android:endX="46"
+                android:endY="50"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#67E8F9" />
+                <item android:offset="0.5" android:color="#A78BFA" />
+                <item android:offset="1.0" android:color="#7C3AED" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Wewnętrzne światło lewego ucha -->
+    <path
+        android:fillColor="#66FFFFFF"
+        android:pathData="M42,46 C41,36 38,26 39,22 C41,26 45,34 46,46 Z" />
+
+    <!-- 3. Prawe ucho (Płomień Nadziei symetryczny) -->
+    <path
+        android:pathData="M65,50 C67,36 74,22 71,16 C67,20 60,32 59,50 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="71"
+                android:startY="16"
+                android:endX="62"
+                android:endY="50"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#67E8F9" />
+                <item android:offset="0.5" android:color="#A78BFA" />
+                <item android:offset="1.0" android:color="#7C3AED" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Wewnętrzne światło prawego ucha -->
+    <path
+        android:fillColor="#66FFFFFF"
+        android:pathData="M66,46 C67,36 70,26 69,22 C67,26 63,34 62,46 Z" />
+
+    <!-- 4. Ciało Llumie (Organiczna kropla światła / Duszek) -->
+    <path
+        android:pathData="M54,42 C40,42 32,54 32,68 C32,80 41,88 54,88 C67,88 76,80 76,68 C76,54 68,42 54,42 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="54"
+                android:startY="42"
+                android:endX="54"
+                android:endY="88"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#C4B5FD" />
+                <item android:offset="0.45" android:color="#818CF8" />
+                <item android:offset="1.0" android:color="#4F46E5" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- 5. Świetliste serce Llumie (Lumen Core) w brzuszku -->
+    <path
+        android:pathData="M54,66 C51,62 46,62 44,65 C41,69 45,74 54,80 C63,74 67,69 64,65 C62,62 57,62 54,66 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="54"
+                android:startY="62"
+                android:endX="54"
+                android:endY="80"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFFBEB" />
+                <item android:offset="0.6" android:color="#FDE047" />
+                <item android:offset="1.0" android:color="#F59E0B" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- 6. Urocze rumieńce (Cheeks) -->
+    <path
+        android:fillColor="#66FB7185"
+        android:pathData="M40,64m-4,0a4,2.5 0 1,0 8,0a4,2.5 0 1,0 -8,0" />
+    <path
+        android:fillColor="#66FB7185"
+        android:pathData="M68,64m-4,0a4,2.5 0 1,0 8,0a4,2.5 0 1,0 -8,0" />
+
+    <!-- 7. Szczęśliwe, mrugające oczka (^ ^) w stylu Apple kawaii -->
+    <path
+        android:strokeColor="#2E1065"
+        android:strokeWidth="2.2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="#00000000"
+        android:pathData="M43,59 L46,56 L49,59" />
+    <path
+        android:strokeColor="#2E1065"
+        android:strokeWidth="2.2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="#00000000"
+        android:pathData="M59,59 L62,56 L65,59" />
+
+    <!-- 8. Mały słodki pyszczek Llumie -->
+    <path
+        android:strokeColor="#6D28D9"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M52,62 Q54,64 56,62" />
+
+    <!-- 9. Złota gwiazdka nadziei u góry -->
+    <path
+        android:fillColor="#FFFBEB"
+        android:pathData="M54,32 L55,34 L57,35 L55,36 L54,38 L53,36 L51,35 L53,34 Z" />
+</vector>
